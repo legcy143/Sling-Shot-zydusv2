@@ -45,12 +45,12 @@ export default function Scorecard() {
         />
       }
       <BgImage />
-      <p className={style.textT}>
+      {/* <p className={style.textT}>
         To Treat anemia <br /> without side effects
-      </p>
+      </p> */}
       <div className={style.Tcontainer}>
         <img className={style.img1} src="/logo.png" alt="logo" />
-        <img className={style.img2} src="/medicine/syrup.png" alt="syrup" />
+        {/* <img className={style.img2} src="/medicine/syrup.png" alt="syrup" /> */}
       </div>
       <section className={style.cardBodyT}>
         <div className={style.scoreCardT}>
