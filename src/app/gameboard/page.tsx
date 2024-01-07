@@ -170,9 +170,9 @@ export default function GameScreen() {
       <BgImage />
       <nav className={styles.nav}>
         <img src="/logo.png" alt="logo" />
-        <div className="bg-red-600 p-2 rounded-md text-white text-center font-bold text-3xl uppercase  transform mt-auto">
+        {/* <div className="bg-red-600 p-2 rounded-md text-white text-center font-bold text-3xl uppercase  transform mt-auto">
           symptoms of anemia
-        </div>
+        </div> */}
         <div>
           {/* <p>
             <Timer initialTime={+time} onTimerEnd={handleOnTimerEnd} />
@@ -182,7 +182,7 @@ export default function GameScreen() {
             isPlaying
             strokeWidth={12}
             duration={+time}
-            size={70}
+            size={65}
             colors={['#004777', '#F7B801', '#A30000', '#A30000']}
             colorsTime={[7, 5, 2, 0]}
             onComplete={handleOnTimerEnd}
