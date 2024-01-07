@@ -1,0 +1,114 @@
+.main_continer {
+    width: 100%;
+    height: 100%;
+}
+
+.shootIcon {
+    position: absolute;
+    /* top: 40%; */
+    top: calc(30% - 4rem);
+    right: 50%;
+    transform: translate(50%, 50%);
+    width: 10rem;
+    z-index: 100;
+}
+
+.bgCover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    width: 100%;
+    height: 4rem;
+}
+.nav div{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap:1rem
+}
+.nav div p {
+    background-color: rgba(128, 128, 128, 0.283);
+    backdrop-filter: blur(20px);
+    padding: 0.7rem 2rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    font-size: 20px;
+}
+.nav img{
+    height: 90%;
+    z-index: 2;
+}
+.games_section {
+    border-radius: 1rem;
+    /* background-color: rgba(42, 42, 42, 0.03); */
+    /* height: 100%; */
+    height: calc(100% - 4rem);
+    width: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.square_div {
+    width: 15rem;
+    aspect-ratio: 1/1;
+    height: fit-content;
+    /* background-color: green; */
+    position: absolute;
+}
+
+.moving_div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width:650px) {
+    .nav {
+        padding: 0rem 2rem;
+    }
+}
+
+/* brust animation */
+@keyframes burstAnimation {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+      display: none;
+    }
+  }
+  
+  .moving_div.burst_animation {
+    animation: burstAnimation 0.5s ease-out forwards;
+    transform-origin: center center;
+  }
+
+  /*  */
+  .messageDiv {
+
+    transform: skewy(-10deg);
+    position: absolute;
+    /* top: 40%; */
+    top: calc(40% - 0.1rem);
+    right: 50%;
+    transform: translate(50%, 50%);
+    width: 10rem;
+    z-index: 100;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 20px rgba(103, 103, 103, 0.5);
+  }

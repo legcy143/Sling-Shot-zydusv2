@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  overflow: auto;
+}
+
+
+
+.start-btn {
+  cursor: pointer;
+  /* width: 184px; */
+  width: 80%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.125em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #fff;
+  background: #644dff;
+  border: 2px solid #4836bb;
+  border-radius: .75rem;
+  box-shadow: 0 8px 0 #4836bb;
+  transition: all .1s ease;
+  filter: drop-shadow(0 15px 20px #654dff63);
+  position: absolute;
+  bottom: -24px;
+}
+
+.start-btn:active {
+  letter-spacing: 0px;
+  transform: translateY(8px);
+  box-shadow: 0 0 0 #654dff63;
+}

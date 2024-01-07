@@ -1,0 +1,29 @@
+.popupNumber {
+    user-select: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(43, 43, 43, 0.3);
+    @apply flex items-center justify-center italic font-bold text-7xl;
+    backdrop-filter: blur(10px);
+    animation: scaleup 2s ease 0s forwards,
+        scaleup 2s ease 1s forwards,
+        scaleup 2s ease 2s forwards;
+}
+
+@keyframes scaleup {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(10);
+    }
+}
