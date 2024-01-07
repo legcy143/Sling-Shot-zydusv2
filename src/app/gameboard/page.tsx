@@ -16,7 +16,7 @@ import { CountdownCircleTimer } from 'react-countdown-circle-timer'
 export default function GameScreen() {
   useEffect(() => {
     // window.location.reload()
-    socket.emit("join", "game");
+    socket.emit("join", "game1");
   }, []);
 
   const [position, setPosition] = useState({ x: 0, y: 0 });

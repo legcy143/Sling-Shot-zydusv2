@@ -40,7 +40,7 @@ const PlayScreen = () => {
 
   useEffect(() => {
     if (isShaking) {
-      io.emit("message", "game", {
+      io.emit("message", "game1", {
         shoot: true,
       });
       setTimeout(() => {
